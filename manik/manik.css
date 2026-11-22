@@ -1,0 +1,129 @@
+
+/* Basic page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f5fa;
+    color: #333333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 8%;
+    background-color: #172b4d;
+}
+
+header h1 {
+    color: white;
+    margin: 0;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #9fc5ff;
+}
+
+/* Main content */
+main {
+    width: 85%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+section h2 {
+    color: #172b4d;
+}
+
+/* Search bar */
+#bookSearch {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0 25px;
+    border: 1px solid #aaaaaa;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Book cards */
+#bookList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.book-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #dddddd;
+    transition: transform 0.3s;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+}
+
+.book-card h3 {
+    color: #245a9b;
+}
+
+/* Footer */
+footer {
+    background-color: #172b4d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile layout */
+@media (max-width: 650px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    #bookList {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        width: 90%;
+    }
+}
+.book-card img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 5px;
+}

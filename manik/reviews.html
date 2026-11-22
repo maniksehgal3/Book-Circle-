@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Reviews | BookCircle</title>
+    <link rel="stylesheet" href="manik.css">
+</head>
+<body>
+
+    <header>
+        <img src="images/logo.jpg" alt="BookCircle Logo" class="site-logo">
+        <h1>BookCircle</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="books.html">Books</a>
+            <a href="genres.html">Genres</a>
+            <a href="recommendations.html">Recommendations</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="../tushar/members.html">Community</a>
+            <a href="../neha/meetings.html">Events</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Reader Reviews</h2>
+            <p>Discover what other readers think about their favourite books.</p>
+        </section>
+
+        <section class="book-list">
+            <div class="book-card">
+                <h3>The Alchemist</h3>
+                <p><strong>Rating:</strong> 5/5</p>
+                <p>A meaningful story about following your dreams.</p>
+            </div>
+
+            <div class="book-card">
+                <h3>Atomic Habits</h3>
+                <p><strong>Rating:</strong> 4.5/5</p>
+                <p>A useful book about building better habits.</p>
+            </div>
+
+            <div class="book-card">
+                <h3>Harry Potter</h3>
+                <p><strong>Rating:</strong> 5/5</p>
+                <p>An imaginative and exciting reading experience.</p>
+            </div>
+        </section>
+
+        <section class="hero">
+            <h2>Write a Review</h2>
+
+            <form>
+                <label for="readerName">Your Name</label>
+                <input type="text" id="readerName" required>
+
+                <label for="bookName">Book Name</label>
+                <input type="text" id="bookName" required>
+
+                <label for="rating">Rating</label>
+                <select id="rating" required>
+                    <option value="">Select rating</option>
+                    <option>5 - Excellent</option>
+                    <option>4 - Very Good</option>
+                    <option>3 - Good</option>
+                    <option>2 - Average</option>
+                    <option>1 - Poor</option>
+                </select>
+
+                <label for="review">Your Review</label>
+                <textarea id="review" required></textarea>
+
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 BookCircle. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

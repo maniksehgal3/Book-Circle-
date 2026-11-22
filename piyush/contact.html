@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | BookCircle</title>
+    <link rel="stylesheet" href="piyush.css">
+</head>
+<body>
+
+    <header>
+        <h1>BookCircle</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../manik/books.html">Books</a>
+            <a href="../tushar/members.html">Community</a>
+            <a href="../neha/meetings.html">Events</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Contact Us</h2>
+            <p>Have a question or suggestion? We'd love to hear from you.</p>
+        </section>
+
+        <section class="hero">
+            <form id="contactForm">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="Enter subject" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Write your message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <p id="formMessage"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 BookCircle. All rights reserved.</p>
+    </footer>
+
+    <script src="piyush.js"></script>
+</body>
+</html>
